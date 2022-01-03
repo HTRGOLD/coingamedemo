@@ -14,7 +14,7 @@ function isTouching(a, b) {
 const avatar = document.querySelector('#player');
 const coin = document.querySelector('#coin');
 // To detect arrow keys throughout the entire window scope.
-window.addEventListener('keyup', function(e){
+window.addEventListener('keydown', function(e){
 	if (e.key === 'ArrowDown' || e.key ==='Down') {// IE only uses 'DOWN'
 		const currTop = extractPos(avatar.style.top);
 		avatar.style.top = `${currTop + 50}px`;
